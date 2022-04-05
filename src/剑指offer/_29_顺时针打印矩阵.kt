@@ -56,3 +56,56 @@ class _29_顺时针打印矩阵 {
 //        return order
 //    }
 //}
+
+//class Solution {
+//    fun spiralOrder(matrix: Array<IntArray>): IntArray {
+//        if (matrix.isEmpty()) return IntArray(0)
+//        var left = 0
+//        var right = matrix[0].size - 1
+//        var top = 0
+//        var bottom = matrix.size - 1
+//        var x = 0
+//        val res = IntArray((right + 1) * (bottom + 1))
+//        while (true) {
+//            for (i in left..right) res[x++] = matrix[top][i]
+//            if (++top > bottom) break
+//            for (i in top..bottom) res[x++] = matrix[i][right]
+//            if (left > --right) break
+//            for (i in right downTo left) res[x++] = matrix[bottom][i]
+//            if (top > --bottom) break
+//            for (i in bottom downTo top) res[x++] = matrix[i][left]
+//            if (++left > right) break
+//        }
+//        return res
+//    }
+//}
+//
+//object Solution {
+//    fun spiralOrder(matrix: Array<IntArray>): IntArray {
+//        if (matrix.isEmpty()) return IntArray(0)
+//        var left = 0
+//        var right = matrix[0].size - 1
+//        var top = 0
+//        var bottom = matrix.size - 1
+//        var x = 0
+//        val res = IntArray((right + 1) * (bottom + 1))
+//        while (true) {
+//            for (i in left .. right) res[x++] = matrix[top][i]
+//            if (++top > bottom) break
+//            for (i in top .. bottom) res[x++] = matrix[i][right]
+//            if (--right<left) break
+//            for (i in right downTo left) res[x++] = matrix[bottom][i]
+//            if (--bottom < top) break
+//            for (i in bottom downTo top) res[x++] = matrix[i][left]
+//            if (++left > right) break
+//
+//        }
+//        return res
+//    }
+//
+//}
+//
+//fun main() {
+//    var solution = Solution()
+//    solution.spiralOrder(arrayOf(intArrayOf(1,2,3), intArrayOf(4,5,6), intArrayOf(7,8,9)))
+//}
