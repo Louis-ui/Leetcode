@@ -2,9 +2,6 @@ package 设计模式
 
 class _单例模式 {
 
-    //饿
-//    object SingletonDemo
-
 
 }
 //懒1
@@ -23,7 +20,7 @@ class _单例模式 {
 //        }
 //    }
 //}
-//懒2
+////懒2
 //class SingletonDemo private constructor() {
 //    companion object {
 //        private lateinit var instance: SingletonDemo
@@ -37,7 +34,7 @@ class _单例模式 {
 //        }
 //    }
 //}
-//线程安全-懒
+////线程安全-懒
 //class SingletonDemo private constructor() {
 //    companion object {
 //        private var instance: SingletonDemo? = null
@@ -53,7 +50,24 @@ class _单例模式 {
 //        }
 //    }
 //}
-//DCL模式
+
+class SingletonDemo private constructor() {
+    @Volatile
+    var instance: SingletonDemo? = null
+        get() {
+            if (field == null) {
+                synchronized(SingletonDemo::class.java) {
+                    if (field == null) {
+                        field = SingletonDemo()
+                    }
+                }
+            }
+            return field
+        }
+        private set
+}
+
+////DCL模式
 //class SingletonDemo private constructor() {
 //    companion object {
 //        val instance: SingletonDemo by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
@@ -61,7 +75,9 @@ class _单例模式 {
 //    }
 //}
 
-//class myTest (var nums: Int){
-//    var a : Int? = null
-//
-//}
+class myTest(var nums: Int) {
+    var a: Int? = null
+
+}
+
+

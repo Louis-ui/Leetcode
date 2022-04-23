@@ -83,9 +83,16 @@ class _07_重建二叉树 {
 //}
 //
 //
-//
-//
+//fun main() {
+//    var solution = Solution()
+//    solution.buildTree(intArrayOf(3,9,20,15,7), intArrayOf(9,3,15,20,7))
+//}
+
+
+
+
 //class TreeNode(var `val`: Int) {
 //    var left: TreeNode? = null
 //    var right: TreeNode? = null
 //}
+

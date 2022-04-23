@@ -67,3 +67,22 @@ class _28_对称的二叉树 {
 //        )
 //    }
 //}
+
+//class Solution {
+//    fun isSymmetric(root: TreeNode?): Boolean {
+//        return if (root == null) true else dfs(root.left,root.right)
+//    }
+//
+//    fun dfs(leftNode: TreeNode?,rightNode : TreeNode?): Boolean {
+//        if (leftNode == null && rightNode == null) return true
+//        return if (leftNode == null || rightNode == null || leftNode.`val`!=rightNode.`val`) false else dfs(leftNode.left,rightNode.right) && dfs(rightNode.left,leftNode.right)
+//    }
+//}
+
+//class Solution {
+//    fun isSymmetric(root: TreeNode?): Boolean {
+//        if (root == null) return true
+//        if ((root.right == null && root.left != null) || (root.right != null && root.left == null)) return false
+//        if (root.left?.`val` != root.right?.`val`) return false
+//    }
+//}
