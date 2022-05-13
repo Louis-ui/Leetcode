@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.*;
 
 
-public class Main {
+//public class Main {
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        while (sc.hasNext()) {
@@ -13,8 +13,8 @@ public class Main {
 //            System.out.println(a + b);
 //        }
 //    }
-
-
+//
+//
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
@@ -25,8 +25,8 @@ public class Main {
 //            System.out.println(arr[i][0]+arr[i][1]);
 //        }
 //    }
-
-    //    public static void main(String[] args) {
+//
+//        public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        while (sc.hasNext()) {
 //            int a = sc.nextInt();
@@ -53,7 +53,7 @@ public class Main {
 //            System.out.println(total);
 //        }
 //    }
-
+//
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int t = sc.nextInt();
@@ -66,7 +66,7 @@ public class Main {
 //            System.out.println(total);
 //        }
 //    }
-
+//
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        while (sc.hasNext()) {
@@ -78,7 +78,7 @@ public class Main {
 //            System.out.println(total);
 //        }
 //    }
-
+//
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        while (sc.hasNextLine()){
@@ -90,7 +90,7 @@ public class Main {
 //            System.out.println(total);
 //        }
 //    }
-
+//
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
@@ -107,7 +107,7 @@ public class Main {
 //            }
 //        }
 //    }
-
+//
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        while (sc.hasNextLine()) {
@@ -123,7 +123,7 @@ public class Main {
 //            System.out.println();
 //        }
 //    }
-
+//
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        while (sc.hasNextLine()) {
@@ -139,15 +139,15 @@ public class Main {
 //            System.out.println();
 //        }
 //    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        while (sc.hasNextLine()) {
-            String[] s = sc.nextLine().split(" ");
-            String.valueOf()
-            System.out.println(Long.parseLong(s[0])+Long.parseLong(s[1]));
-
-        }
-    }
-
-}
+//
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        while (sc.hasNextLine()) {
+//            String[] s = sc.nextLine().split(" ");
+//            String.valueOf()
+//            System.out.println(Long.parseLong(s[0])+Long.parseLong(s[1]));
+//
+//        }
+//    }
+//
+//}

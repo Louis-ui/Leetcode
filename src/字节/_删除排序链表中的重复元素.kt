@@ -1,5 +1,7 @@
 package 字节
 
+import 剑指offer.ListNode
+
 class _删除排序链表中的重复元素 {
 }
 

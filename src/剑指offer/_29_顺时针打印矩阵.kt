@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package 剑指offer
 
 class _29_顺时针打印矩阵 {
@@ -56,11 +55,7 @@ class _29_顺时针打印矩阵 {
 //        }
 //        return order
 //    }
-=======
-package 剑指offer
 
-class _29_顺时针打印矩阵 {
-}
 
 //class Solution {
 //    fun spiralOrder(matrix: Array<IntArray>): IntArray {
@@ -167,5 +162,4 @@ class _29_顺时针打印矩阵 {
 //fun main() {
 //    var solution = Solution()
 //    solution.spiralOrder(arrayOf(intArrayOf(1,2,3), intArrayOf(4,5,6), intArrayOf(7,8,9)))
->>>>>>> origin/master
 //}
