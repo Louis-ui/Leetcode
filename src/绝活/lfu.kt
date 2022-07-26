@@ -24,3 +24,4 @@ class lfucachr(size : Int){
     }
 
 }
+
