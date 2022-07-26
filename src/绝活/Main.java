@@ -4,17 +4,18 @@ import java.math.BigInteger;
 import java.util.*;
 
 
-//public class Main {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        while (sc.hasNext()) {
-//            int a = sc.nextInt();
-//            int b = sc.nextInt();
-//            System.out.println(a + b);
-//        }
-//    }
-//
-//
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            sc.next();
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            System.out.println(a + b);
+        }
+    }
+
+}
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();

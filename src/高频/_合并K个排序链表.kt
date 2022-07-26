@@ -17,44 +17,44 @@ class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 
-//internal class Solution {
-//    fun mergeKLists(lists: Array<ListNode?>): ListNode? {
-//        return merge(lists, 0, lists.size - 1)
-//    }
-//
-//    fun merge(lists: Array<ListNode?>, l: Int, r: Int): ListNode? {
-//        if (l == r) {
-//            return lists[l]
-//        }
-//        if (l > r) {
-//            return null
-//        }
-//        val mid = l + r shr 1
-//        return mergeTwoLists(merge(lists, l, mid), merge(lists, mid + 1, r))
-//    }
-//
-//    fun mergeTwoLists(a: ListNode?, b: ListNode?): ListNode? {
-//        if (a == null || b == null) {
-//            return a ?: b
-//        }
-//        val head = ListNode(0)
-//        var tail: ListNode? = head
-//        var aPtr = a
-//        var bPtr = b
-//        while (aPtr != null && bPtr != null) {
-//            if (aPtr.`val` < bPtr.`val`) {
-//                tail!!.next = aPtr
-//                aPtr = aPtr.next
-//            } else {
-//                tail!!.next = bPtr
-//                bPtr = bPtr.next
-//            }
-//            tail = tail.next
-//        }
-//        tail!!.next = aPtr ?: bPtr
-//        return head.next
-//    }
-//}
+internal class Solution {
+    fun mergeKLists(lists: Array<ListNode?>): ListNode? {
+        return merge(lists, 0, lists.size - 1)
+    }
+
+    fun merge(lists: Array<ListNode?>, l: Int, r: Int): ListNode? {
+        if (l == r) {
+            return lists[l]
+        }
+        if (l > r) {
+            return null
+        }
+        val mid = l + r shr 1
+        return mergeTwoLists(merge(lists, l, mid), merge(lists, mid + 1, r))
+    }
+
+    fun mergeTwoLists(a: ListNode?, b: ListNode?): ListNode? {
+        if (a == null || b == null) {
+            return a ?: b
+        }
+        val head = ListNode(0)
+        var tail: ListNode? = head
+        var aPtr = a
+        var bPtr = b
+        while (aPtr != null && bPtr != null) {
+            if (aPtr.`val` < bPtr.`val`) {
+                tail!!.next = aPtr
+                aPtr = aPtr.next
+            } else {
+                tail!!.next = bPtr
+                bPtr = bPtr.next
+            }
+            tail = tail.next
+        }
+        tail!!.next = aPtr ?: bPtr
+        return head.next
+    }
+}
 
 //class Solution {
 //    fun mergeKLists(lists: Array<ListNode?>): ListNode? {

@@ -43,6 +43,7 @@ class _全排列 {
 //    fun backtrack(nums: IntArray,track:LinkedList<Int>){
 //        if (track.size == nums.size){
 //            res.add(LinkedList(track))
+//            return
 //        }
 //        for (i in nums.indices){
 //            if (track.contains(nums[i])) continue
